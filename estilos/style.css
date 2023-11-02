@@ -110,8 +110,24 @@ footer{
     font-size: 30px;
     letter-spacing: 15px;
 }
+.videos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.izq{
+    padding: 30px;
+}
+.centro{
+    padding: 30px;
+}
+.der{
+    padding: 30px;
+}
 
-/* media-queries-inicia */
+
+    /* media-queries-inicia */
 
 @media only screen and (min-width:300px) and (max-width:420px){
 
