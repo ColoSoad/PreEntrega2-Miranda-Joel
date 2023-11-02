@@ -8,6 +8,13 @@
     box-sizing: border-box;
     background-color: #2A3A47;
 }
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #2A3A47;
+}
+
 img{
     height: 35px;
 }
@@ -22,7 +29,6 @@ h2{
     padding: 30px;
     color: #fff;
     text-align: center;
-    background-color: #2A3A47;
     font-family: 'Oswald', sans-serif;
     text-shadow: 0 0 1px #fff;
 }
@@ -33,11 +39,10 @@ h2{
     grid-template-rows: repeat(6, 200px);
     padding: 30px;
     grid-gap: 20px;
-    background-color: #2A3A47;
 
 }
+
 .item{
-    background-color: #2A3A47;
     border: 2px solid #fff;
     background-size: cover;
     background-position: center;
@@ -63,16 +68,13 @@ h2{
 }
 
 h3{
-    margin-bottom: 15px;
-    color: #333;
+    padding: 30px;
+    color: #fff;
     text-align: center;
-    background-color: #2A3A47;
     font-family: 'Oswald', sans-serif;
-    text-shadow: 0 0 2px #fff;
+    text-shadow: 0 0 1px #fff;
 }
-.container-fluid{
-    background-color: #2A3A47;
-}
+
 .e-left{
     height: 450px;
     background-image: url(../multimedia/img/left1.jpg) ;
@@ -92,7 +94,18 @@ h3{
     background-size: cover;
     background-position: center;
 }
-
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: #2A3A47;
+    color: white;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
 
 p{
     text-align: center;
@@ -100,12 +113,17 @@ p{
     padding: 60px;
 }
 footer{
-    background-color: #2A3A47;
     text-align: center;
     color: #fff;
     padding: 30px;
 }
 .redes a{
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+.derecha a{
+    text-align: right;
     color: #fff;
     font-size: 30px;
     letter-spacing: 15px;
@@ -125,11 +143,16 @@ footer{
 .der{
     padding: 30px;
 }
-
+.areatext{
+    padding: 30px 0 0 0 ;
+}
+.row{
+    justify-content: center;
+}
 
     /* media-queries-inicia */
 
-@media only screen and (min-width:300px) and (max-width:420px){
+@media only screen and (min-width:300px) and (max-width:480px){
 
     .inicio{
         height: 400px;
@@ -140,9 +163,13 @@ footer{
     .e-right2{
         margin-bottom: 35px;
     }
+    .videos{
+        justify-content: center;
+    }
+
 }
 
-@media only screen and (min-width:480px) and (max-width:768px){
+@media only screen and (min-width:481px) and (max-width:768px){
     .proyecto{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 200px);
@@ -152,7 +179,8 @@ footer{
     }
 }
 
-@media only screen and (min-width:769px) and (max-width:1200px){
+
+@media only screen and (min-width:768px) and (max-width:1023px){
     .proyecto{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(3, 200px);
@@ -181,9 +209,10 @@ footer{
         grid-column: 1/2;
         grid-row: 3/4;
     }
+    
 }
 
-@media only screen and (min-width:1201px) and (max-width:1820px){
+@media only screen and (min-width:1024px) and (max-width:1820px){
     .proyecto{
         display: grid;
         grid-template-columns: 300px 300px 300px;
