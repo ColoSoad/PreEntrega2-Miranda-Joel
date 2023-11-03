@@ -80,68 +80,15 @@
                 <div class="izquierda col-md-6">
                     <div class="mb-3">
                         <h2>Consulta</h2>
-                        <form
-                            action=""
-                            method="post"
-                            enctype="application/x-www-form-urlencoded"
-                            netlify
-                        >
-                            <label class="box" for=""></label>
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Nombre"
-                            />
+                        <form action="https://formspree.io/f/mknleraq" method="post" enctype="application/x-www-form-urlencoded" netlify>
+                            <label class="box" for="Nombre"></label><input type="text" class="form-control" name="Nombre" placeholder="Nombre"/>
+                            <label class="box" for="Apellido"></label><input type="text" class="form-control" required name="Apellido" placeholder="Apellido"/>
+                            <label class="box" for="Email"></label><input type="email" class="form-control" id="email" name="Email" required placeholder="Email"/>
+                            <div class="areatext mb-3">
+                                <textarea class="mb-3 form-control" placeholder="Déjanos tu consulta!" id="floatingTextarea2" style="height: 200px"></textarea>
+                            </div>
+                             <input type="submit" class="btn btn-secondary btn-block" value="Enviar">
                         </form>
-                    </div>
-                    <div class="mb-3">
-                        <form
-                            action=""
-                            method="post"
-                            enctype="application/x-www-form-urlencoded"
-                            netlify
-                        >
-                            <label class="box" for=""></label>
-                            <input
-                                type="text"
-                                class="form-control"
-                                required
-                                placeholder="Apellido"
-                            />
-                        </form>
-                    </div>
-                    <div class="mb-3">
-                        <form
-                            action=""
-                            method="post"
-                            enctype="application/x-www-form-urlencoded"
-                            netlify
-                        >
-                            <label class="box" for="emailInput"></label>
-                            <input
-                                type="email"
-                                class="form-control"
-                                id="emailInput"
-                                required
-                                placeholder="Email"
-                            />
-                        </form>
-                    </div>
-                    <div class="areatext mb-3">
-                        <textarea
-                            class="form-control"
-                            placeholder="Déjanos tu consulta!"
-                            id="floatingTextarea2"
-                            style="height: 200px"
-                        ></textarea>
-                    </div>
-                    <div class="d-grid">
-                        <button
-                            type="button"
-                            class="btn btn-secondary btn-block"
-                        >
-                            Enviar!
-                        </button>
                     </div>
                 </div>
                 <div class="derecha col-md-3">
@@ -159,8 +106,9 @@
         <footer>
             <div class="redes">
                 <!-- Iconos redes sociales inicia -->
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/colo.soad.3/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/colosoad/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/ColoSOAD?t=MNAf6J1jHFYioJQOYcZH2Q&s=09" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                 <!-- Iconos redes sociales fin -->
             </div>
         </footer>
